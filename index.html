@@ -430,7 +430,10 @@ const BLUE='#3D5B81', ORANGE='#EE6B4D', LBLUE='#98C0D9';
 // ── GOOGLE SHEETS CONFIG ────────────────────────────────────────────
 const SHEET_ID = '1lZPMHJv5p8_zDhpOewpNU6Eh-O811a83f-IV0O1xnMo';
 const SHEET_NAME = 'Caracterización';
+const PUBLISHED_ID = '2PACX-1vSzRTFiqGC_u88dW6vAwMyDkV0wDLv3ZD2yYMhdQW1LjwPGCN_n7o0BL9kXEFtuYibsf1jhFm6JboH8';
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(SHEET_NAME)}`;
+const SHEET_URL_ALT = `https://docs.google.com/spreadsheets/d/e/${PUBLISHED_ID}/pub?gid=1129586752&single=true&output=csv`;
+
 
 // Fallback data (último estado conocido del corpus — dic 2025)
 const FALLBACK = {
@@ -584,7 +587,7 @@ function wordFreq(titles, stop) {
 async function fetchSheetData() {
   setStatus('syncing');
   try {
-    const res = await fetch(SHEET_URL);
+    const res = await fetch(SHEET_URL).catch(()=>fetch(SHEET_URL_ALT));
     if(!res.ok) throw new Error('HTTP '+res.status);
     const raw = await res.text();
     const rows = parseGSheetJSON(raw);
