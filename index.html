@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -23,31 +24,31 @@
 body { font-family:'Inter',sans-serif; background:var(--gray-100); color:var(--black); font-size:14px; }
 
 /* HEADER */
-header { background:var(--black); height:52px; display:flex; align-items:center; justify-content:space-between; padding:0 32px; position:sticky; top:0; z-index:200; }
+header { background:var(–black); height:52px; display:flex; align-items:center; justify-content:space-between; padding:0 32px; position:sticky; top:0; z-index:200; }
 .logo { display:flex; align-items:center; gap:12px; }
-.logo-badge { background:var(--orange); color:#fff; font-size:10px; font-weight:700; letter-spacing:0.05em; padding:4px 8px; border-radius:3px; }
+.logo-badge { background:var(–orange); color:#fff; font-size:10px; font-weight:700; letter-spacing:0.05em; padding:4px 8px; border-radius:3px; }
 .logo-name { color:#fff; font-size:13px; font-weight:600; }
 .logo-sep { color:#444; margin:0 2px; }
-.logo-sub { color:var(--gray-400); font-size:12px; }
-.corpus-pill { background:#222; border:1px solid #333; border-radius:20px; padding:4px 12px; font-size:11px; color:var(--gray-400); }
-.corpus-pill strong { color:var(--orange); }
+.logo-sub { color:var(–gray-400); font-size:12px; }
+.corpus-pill { background:#222; border:1px solid #333; border-radius:20px; padding:4px 12px; font-size:11px; color:var(–gray-400); }
+.corpus-pill strong { color:var(–orange); }
 
 /* NAV */
-nav { background:#fff; border-bottom:1px solid var(--border); display:flex; align-items:center; padding:0 32px; overflow-x:auto; }
-.nav-btn { padding:14px 18px; font-size:12px; font-weight:500; color:var(--gray-600); border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; transition:all .15s; white-space:nowrap; font-family:'Inter',sans-serif; }
-.nav-btn:hover { color:var(--black); }
-.nav-btn.active { color:var(--orange); border-bottom-color:var(--orange); font-weight:600; }
+nav { background:#fff; border-bottom:1px solid var(–border); display:flex; align-items:center; padding:0 32px; overflow-x:auto; }
+.nav-btn { padding:14px 18px; font-size:12px; font-weight:500; color:var(–gray-600); border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; transition:all .15s; white-space:nowrap; font-family:‘Inter’,sans-serif; }
+.nav-btn:hover { color:var(–black); }
+.nav-btn.active { color:var(–orange); border-bottom-color:var(–orange); font-weight:600; }
 
 /* PAGES */
 .page { display:none; }
 .page.active { display:block; }
 
 /* HERO */
-.page-hero { background:var(--blue); padding:28px 32px; color:#fff; }
+.page-hero { background:var(–blue); padding:28px 32px; color:#fff; }
 .page-hero-inner { max-width:1280px; margin:0 auto; display:flex; align-items:flex-end; justify-content:space-between; gap:20px; flex-wrap:wrap; }
-.page-eyebrow { font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--blue-light); margin-bottom:6px; }
+.page-eyebrow { font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(–blue-light); margin-bottom:6px; }
 .page-title { font-size:20px; font-weight:700; line-height:1.2; }
-.page-title em { font-style:italic; color:var(--orange); }
+.page-title em { font-style:italic; color:var(–orange); }
 .page-desc { font-size:12px; color:rgba(255,255,255,0.6); margin-top:5px; max-width:500px; line-height:1.5; }
 .period-pills { display:flex; gap:8px; flex-wrap:wrap; }
 .period-pill { background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); color:#fff; border-radius:20px; padding:4px 12px; font-size:11px; font-weight:500; white-space:nowrap; }
@@ -58,12 +59,12 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
 
 /* SECTION DIV */
 .sdiv { display:flex; align-items:center; gap:12px; margin:20px 0 14px; }
-.sdiv-title { font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gray-600); white-space:nowrap; }
-.sdiv-line { flex:1; height:1px; background:var(--border); }
+.sdiv-title { font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(–gray-600); white-space:nowrap; }
+.sdiv-line { flex:1; height:1px; background:var(–border); }
 
 /* CARD */
-.card { background:#fff; border:1px solid var(--border); border-radius:6px; padding:18px; }
-.card-label { font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gray-400); margin-bottom:12px; }
+.card { background:#fff; border:1px solid var(–border); border-radius:6px; padding:18px; }
+.card-label { font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(–gray-400); margin-bottom:12px; }
 
 /* GRIDS */
 .g2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
@@ -74,65 +75,65 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
 .full { margin-bottom:16px; }
 
 /* KPI CARD */
-.kpi { background:#fff; border:1px solid var(--border); border-radius:6px; padding:16px 18px; position:relative; overflow:hidden; }
-.kpi::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; }
-.kpi.kb::before { background:var(--blue); }
-.kpi.ko::before { background:var(--orange); }
-.kpi.kl::before { background:var(--blue-light); }
-.kpi.kd::before { background:linear-gradient(90deg,var(--blue),var(--orange)); }
-.kpi-lbl { font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gray-400); margin-bottom:6px; }
+.kpi { background:#fff; border:1px solid var(–border); border-radius:6px; padding:16px 18px; position:relative; overflow:hidden; }
+.kpi::before { content:’’; position:absolute; top:0; left:0; right:0; height:3px; }
+.kpi.kb::before { background:var(–blue); }
+.kpi.ko::before { background:var(–orange); }
+.kpi.kl::before { background:var(–blue-light); }
+.kpi.kd::before { background:linear-gradient(90deg,var(–blue),var(–orange)); }
+.kpi-lbl { font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(–gray-400); margin-bottom:6px; }
 .kpi-val { font-size:28px; font-weight:700; line-height:1; margin-bottom:4px; }
-.kpi-val.b { color:var(--blue); }
-.kpi-val.o { color:var(--orange); }
+.kpi-val.b { color:var(–blue); }
+.kpi-val.o { color:var(–orange); }
 .kpi-val.l { color:#4A8FAA; }
-.kpi-sub { font-size:11px; color:var(--gray-600); display:flex; align-items:center; gap:5px; flex-wrap:wrap; }
+.kpi-sub { font-size:11px; color:var(–gray-600); display:flex; align-items:center; gap:5px; flex-wrap:wrap; }
 .tag { display:inline-block; font-size:10px; font-weight:600; padding:2px 6px; border-radius:3px; }
-.tag-b { background:rgba(61,91,129,.1); color:var(--blue); }
-.tag-o { background:rgba(238,107,77,.1); color:var(--orange); }
-.tag-g { background:var(--gray-200); color:var(--gray-600); }
+.tag-b { background:rgba(61,91,129,.1); color:var(–blue); }
+.tag-o { background:rgba(238,107,77,.1); color:var(–orange); }
+.tag-g { background:var(–gray-200); color:var(–gray-600); }
 
 /* SCORE PAIR */
 .score-pair { display:grid; grid-template-columns:1fr auto 1fr; gap:16px; align-items:center; }
 .score-side { display:flex; flex-direction:column; gap:4px; }
 .score-big { font-size:40px; font-weight:700; line-height:1; }
-.score-big.b { color:var(--blue); }
-.score-big.o { color:var(--orange); }
+.score-big.b { color:var(–blue); }
+.score-big.o { color:var(–orange); }
 .score-name { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
-.score-name.b { color:var(--blue); }
-.score-name.o { color:var(--orange); }
-.score-period { font-size:10px; color:var(--gray-400); }
+.score-name.b { color:var(–blue); }
+.score-name.o { color:var(–orange); }
+.score-period { font-size:10px; color:var(–gray-400); }
 .score-cat { font-size:10px; font-weight:600; padding:2px 8px; border-radius:3px; width:fit-content; margin-top:4px; }
 .cat-n { background:rgba(152,192,217,.2); color:#4A8FAA; }
-.cat-c { background:rgba(238,107,77,.1); color:var(--orange); }
+.cat-c { background:rgba(238,107,77,.1); color:var(–orange); }
 .vs-div { text-align:center; display:flex; flex-direction:column; gap:4px; align-items:center; }
-.vs-lbl { font-size:9px; font-weight:700; letter-spacing:.1em; color:var(--gray-400); text-transform:uppercase; }
-.vs-val { font-size:18px; font-weight:700; color:var(--blue); }
-.vs-dir { font-size:10px; color:var(--gray-400); }
+.vs-lbl { font-size:9px; font-weight:700; letter-spacing:.1em; color:var(–gray-400); text-transform:uppercase; }
+.vs-val { font-size:18px; font-weight:700; color:var(–blue); }
+.vs-dir { font-size:10px; color:var(–gray-400); }
 
 /* MEDIOS TABLE */
 .mt { width:100%; border-collapse:collapse; font-size:12px; }
-.mt th { text-align:left; padding:5px 8px; font-size:9px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); border-bottom:1px solid var(--border); }
-.mt td { padding:9px 8px; border-bottom:1px solid var(--gray-100); vertical-align:middle; }
+.mt th { text-align:left; padding:5px 8px; font-size:9px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(–gray-400); border-bottom:1px solid var(–border); }
+.mt td { padding:9px 8px; border-bottom:1px solid var(–gray-100); vertical-align:middle; }
 .mt tr:last-child td { border-bottom:none; }
 .m-name { font-weight:600; font-size:12px; }
-.m-type { font-size:9px; color:var(--gray-400); }
+.m-type { font-size:9px; color:var(–gray-400); }
 .bar-cell { display:flex; align-items:center; gap:5px; }
-.mini-bar { width:55px; height:5px; background:var(--gray-200); border-radius:3px; overflow:hidden; flex-shrink:0; }
+.mini-bar { width:55px; height:5px; background:var(–gray-200); border-radius:3px; overflow:hidden; flex-shrink:0; }
 .mini-fill { height:100%; border-radius:3px; }
-.fill-b { background:var(--blue); }
-.fill-o { background:var(--orange); }
+.fill-b { background:var(–blue); }
+.fill-o { background:var(–orange); }
 .sn { font-weight:700; font-size:12px; min-width:26px; }
-.sn.b { color:var(--blue); }
-.sn.o { color:var(--orange); }
+.sn.b { color:var(–blue); }
+.sn.o { color:var(–orange); }
 .dt { font-size:10px; font-weight:700; padding:2px 5px; border-radius:3px; }
-.dt-b { background:rgba(61,91,129,.1); color:var(--blue); }
-.dt-o { background:rgba(238,107,77,.1); color:var(--orange); }
+.dt-b { background:rgba(61,91,129,.1); color:var(–blue); }
+.dt-o { background:rgba(238,107,77,.1); color:var(–orange); }
 
 /* TOPIC BARS */
-.topic-row { display:grid; grid-template-columns:100px 1fr; gap:10px; align-items:center; padding:7px 0; border-bottom:1px solid var(--gray-100); }
+.topic-row { display:grid; grid-template-columns:100px 1fr; gap:10px; align-items:center; padding:7px 0; border-bottom:1px solid var(–gray-100); }
 .topic-row:last-child { border-bottom:none; }
 .topic-name { font-size:11px; font-weight:500; line-height:1.3; }
-.topic-bg { flex:1; height:6px; background:var(--gray-200); border-radius:3px; overflow:hidden; }
+.topic-bg { flex:1; height:6px; background:var(–gray-200); border-radius:3px; overflow:hidden; }
 .topic-fill { height:100%; border-radius:3px; }
 .topic-row-bar { display:flex; align-items:center; gap:5px; margin-bottom:3px; }
 .topic-lbl { font-size:9px; font-weight:700; width:9px; text-align:center; }
@@ -142,25 +143,25 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
 .dist-row { display:grid; grid-template-columns:24px 1fr; gap:8px; align-items:center; margin-bottom:7px; }
 .dist-num { width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; flex-shrink:0; }
 .dist-inner { display:flex; flex-direction:column; gap:2px; }
-.dist-name { font-size:10px; color:var(--gray-600); line-height:1; }
+.dist-name { font-size:10px; color:var(–gray-600); line-height:1; }
 .dist-bars { display:flex; flex-direction:column; gap:2px; }
 .dist-bar-row { display:flex; align-items:center; gap:5px; }
-.dist-bar-bg { flex:1; height:12px; background:var(--gray-200); border-radius:2px; overflow:hidden; max-width:220px; }
+.dist-bar-bg { flex:1; height:12px; background:var(–gray-200); border-radius:2px; overflow:hidden; max-width:220px; }
 .dist-bar-fill { height:100%; border-radius:2px; display:flex; align-items:center; padding-left:4px; font-size:9px; font-weight:700; color:rgba(255,255,255,.9); min-width:18px; }
-.dist-pct { font-size:9px; color:var(--gray-400); width:26px; text-align:right; }
+.dist-pct { font-size:9px; color:var(–gray-400); width:26px; text-align:right; }
 
 /* INSIGHT ROW */
 .insight-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:16px; }
-.insight { background:#fff; border:1px solid var(--border); border-radius:6px; padding:16px; }
-.insight.accent { background:var(--blue); border-color:var(--blue); }
-.insight.accent .card-label { color:var(--blue-light); }
+.insight { background:#fff; border:1px solid var(–border); border-radius:6px; padding:16px; }
+.insight.accent { background:var(–blue); border-color:var(–blue); }
+.insight.accent .card-label { color:var(–blue-light); }
 
 /* FILTER BAR */
-.filter-bar { background:#fff; border-bottom:1px solid var(--border); padding:12px 32px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; position:sticky; top:52px; z-index:100; }
-.f-lbl { font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); white-space:nowrap; }
-.f-sel { border:1px solid var(--border); border-radius:4px; padding:5px 24px 5px 8px; font-size:12px; font-family:'Inter',sans-serif; color:var(--black); background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23aaa'/%3E%3C/svg%3E") no-repeat right 7px center; cursor:pointer; outline:none; appearance:none; -webkit-appearance:none; }
-.f-sel:focus { border-color:var(--blue); }
-.f-reset { font-size:11px; color:var(--orange); font-weight:600; border:none; background:none; cursor:pointer; margin-left:auto; font-family:'Inter',sans-serif; }
+.filter-bar { background:#fff; border-bottom:1px solid var(–border); padding:12px 32px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; position:sticky; top:52px; z-index:100; }
+.f-lbl { font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(–gray-400); white-space:nowrap; }
+.f-sel { border:1px solid var(–border); border-radius:4px; padding:5px 24px 5px 8px; font-size:12px; font-family:‘Inter’,sans-serif; color:var(–black); background:#fff url(“data:image/svg+xml,%3Csvg xmlns=‘http://www.w3.org/2000/svg’ width=‘10’ height=‘6’%3E%3Cpath d=‘M0 0l5 6 5-6z’ fill=’%23aaa’/%3E%3C/svg%3E”) no-repeat right 7px center; cursor:pointer; outline:none; appearance:none; -webkit-appearance:none; }
+.f-sel:focus { border-color:var(–blue); }
+.f-reset { font-size:11px; color:var(–orange); font-weight:600; border:none; background:none; cursor:pointer; margin-left:auto; font-family:‘Inter’,sans-serif; }
 
 /* WC */
 .wc-wrap { display:flex; flex-wrap:wrap; gap:5px; }
@@ -176,25 +177,26 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
 .cw canvas { max-height:240px; }
 
 /* TEMPORAL NOTE */
-.t-note { margin-top:10px; padding-top:10px; border-top:1px solid var(--gray-100); font-size:10px; color:var(--gray-400); display:flex; gap:20px; flex-wrap:wrap; }
+.t-note { margin-top:10px; padding-top:10px; border-top:1px solid var(–gray-100); font-size:10px; color:var(–gray-400); display:flex; gap:20px; flex-wrap:wrap; }
 
 /* SCALE ITEM */
-.scale-item { display:grid; grid-template-columns:36px 140px 1fr; gap:12px; align-items:center; padding:10px 14px; background:#fff; border:1px solid var(--border); border-radius:5px; }
+.scale-item { display:grid; grid-template-columns:36px 140px 1fr; gap:12px; align-items:center; padding:10px 14px; background:#fff; border:1px solid var(–border); border-radius:5px; }
 .scale-item + .scale-item { margin-top:8px; }
 
 .sync-dot { display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:5px; vertical-align:middle; }
 .sync-dot.live     { background:#22c55e; box-shadow:0 0 5px #22c55e88; }
-.sync-dot.syncing  { background:var(--orange); animation:pulse 1s infinite; }
-.sync-dot.fallback { background:var(--gray-400); }
+.sync-dot.syncing  { background:var(–orange); animation:pulse 1s infinite; }
+.sync-dot.fallback { background:var(–gray-400); }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
-#sync-status { font-size:11px; color:var(--gray-400); display:flex; align-items:center; cursor:pointer; }
+#sync-status { font-size:11px; color:var(–gray-400); display:flex; align-items:center; cursor:pointer; }
 #sync-status:hover { color:#fff; }
 
 @media (max-width:960px) {
-  .container, .filter-bar, .page-hero, header, nav { padding-left:16px; padding-right:16px; }
-  .g2,.g3,.g4,.gw,.gww,.insight-row { grid-template-columns:1fr; }
+.container, .filter-bar, .page-hero, header, nav { padding-left:16px; padding-right:16px; }
+.g2,.g3,.g4,.gw,.gww,.insight-row { grid-template-columns:1fr; }
 }
 </style>
+
 </head>
 <body>
 
@@ -220,6 +222,7 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
 </nav>
 
 <!-- ══ PAGE: RESUMEN ══════════════════════════════════════════════════ -->
+
 <div id="page-resumen" class="page active">
   <div class="page-hero">
     <div class="page-hero-inner">
@@ -243,75 +246,79 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
       <div class="kpi kd"><div class="kpi-lbl">Diferencia global</div><div class="kpi-val">+0,38</div><div class="kpi-sub">Favorable a <strong>Duque</strong> en todos los temas</div></div>
     </div>
 
-    <div class="sdiv"><div class="sdiv-title">Comparación central</div><div class="sdiv-line"></div></div>
+```
+<div class="sdiv"><div class="sdiv-title">Comparación central</div><div class="sdiv-line"></div></div>
 
-    <div class="gw">
-      <div class="card">
-        <div class="card-label">Encuadre promedio global</div>
-        <div class="score-pair">
-          <div class="score-side">
-            <div class="score-name b">Iván Duque</div>
-            <div class="score-big b">4,02</div>
-            <div class="score-period">Ago 2018 – Dic 2019 · 366 notas</div>
-            <div class="score-cat cat-n">Neutralidad</div>
-            <div style="margin-top:10px;font-size:11px;color:var(--gray-600);line-height:1.5;">El Tiempo lidera con <strong style="color:var(--blue)">4,54</strong><br>Categoría modal: Neutralidad (41,5%)</div>
-          </div>
-          <div class="vs-div">
-            <div class="vs-lbl">VS</div>
-            <div class="vs-val">+0,38</div>
-            <div class="vs-dir">▲ Duque</div>
-          </div>
-          <div class="score-side">
-            <div class="score-name o">Gustavo Petro</div>
-            <div class="score-big o">3,64</div>
-            <div class="score-period">Ago 2022 – Dic 2023 · 356 notas</div>
-            <div class="score-cat cat-c">Crítica neutral</div>
-            <div style="margin-top:10px;font-size:11px;color:var(--gray-600);line-height:1.5;">El Espectador lidera con <strong style="color:var(--orange)">3,82</strong><br>Categoría modal: Neutralidad (45,2%)</div>
-          </div>
-        </div>
+<div class="gw">
+  <div class="card">
+    <div class="card-label">Encuadre promedio global</div>
+    <div class="score-pair">
+      <div class="score-side">
+        <div class="score-name b">Iván Duque</div>
+        <div class="score-big b">4,02</div>
+        <div class="score-period">Ago 2018 – Dic 2019 · 366 notas</div>
+        <div class="score-cat cat-n">Neutralidad</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--gray-600);line-height:1.5;">El Tiempo lidera con <strong style="color:var(--blue)">4,54</strong><br>Categoría modal: Neutralidad (41,5%)</div>
       </div>
-      <div class="card">
-        <div class="card-label">Por medio de comunicación</div>
-        <table class="mt" id="mt-main"></table>
+      <div class="vs-div">
+        <div class="vs-lbl">VS</div>
+        <div class="vs-val">+0,38</div>
+        <div class="vs-dir">▲ Duque</div>
+      </div>
+      <div class="score-side">
+        <div class="score-name o">Gustavo Petro</div>
+        <div class="score-big o">3,64</div>
+        <div class="score-period">Ago 2022 – Dic 2023 · 356 notas</div>
+        <div class="score-cat cat-c">Crítica neutral</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--gray-600);line-height:1.5;">El Espectador lidera con <strong style="color:var(--orange)">3,82</strong><br>Categoría modal: Neutralidad (45,2%)</div>
       </div>
     </div>
+  </div>
+  <div class="card">
+    <div class="card-label">Por medio de comunicación</div>
+    <table class="mt" id="mt-main"></table>
+  </div>
+</div>
 
-    <div class="sdiv"><div class="sdiv-title">Temas y evolución</div><div class="sdiv-line"></div></div>
+<div class="sdiv"><div class="sdiv-title">Temas y evolución</div><div class="sdiv-line"></div></div>
 
-    <div class="g2">
-      <div class="card">
-        <div class="card-label">Encuadre promedio por tema</div>
-        <div id="topic-main"></div>
-      </div>
-      <div class="card">
-        <div class="card-label">Evolución mensual del encuadre</div>
-        <div class="cw"><canvas id="chart-temp-main"></canvas></div>
-        <div class="t-note"><span>Eje X: meses relativos al inicio del mandato</span><span>— — promedio global</span></div>
-      </div>
-    </div>
+<div class="g2">
+  <div class="card">
+    <div class="card-label">Encuadre promedio por tema</div>
+    <div id="topic-main"></div>
+  </div>
+  <div class="card">
+    <div class="card-label">Evolución mensual del encuadre</div>
+    <div class="cw"><canvas id="chart-temp-main"></canvas></div>
+    <div class="t-note"><span>Eje X: meses relativos al inicio del mandato</span><span>— — promedio global</span></div>
+  </div>
+</div>
 
-    <div class="sdiv"><div class="sdiv-title">Principales hallazgos</div><div class="sdiv-line"></div></div>
-    <div class="insight-row">
-      <div class="insight accent">
-        <div class="card-label">Hallazgo 1</div>
-        <div style="font-size:15px;font-weight:700;font-style:italic;color:#fff;line-height:1.3;margin-top:4px;">Encuadre más favorable para Duque en los 5 temas analizados</div>
-        <div style="font-size:11px;color:rgba(255,255,255,.65);margin-top:8px;">Mayor brecha en <strong style="color:var(--blue-light)">Corrupción (+0,55)</strong> y Economía (+0,48)</div>
-      </div>
-      <div class="insight">
-        <div class="card-label">Hallazgo 2</div>
-        <div style="font-size:15px;font-weight:700;font-style:italic;color:var(--blue);line-height:1.3;margin-top:4px;">El Tiempo fue más favorable a Duque que a Petro</div>
-        <div style="font-size:11px;color:var(--gray-600);margin-top:8px;">4,54 vs 3,93 · diferencia de <strong>+0,61</strong></div>
-      </div>
-      <div class="insight">
-        <div class="card-label">Hallazgo 3</div>
-        <div style="font-size:15px;font-weight:700;font-style:italic;color:var(--orange);line-height:1.3;margin-top:4px;">El Espectador fue el medio con encuadre más similar entre presidentes</div>
-        <div style="font-size:11px;color:var(--gray-600);margin-top:8px;">3,78 Duque vs 3,82 Petro · Δ mínimo <strong>+0,04</strong> para Petro</div>
-      </div>
-    </div>
+<div class="sdiv"><div class="sdiv-title">Principales hallazgos</div><div class="sdiv-line"></div></div>
+<div class="insight-row">
+  <div class="insight accent">
+    <div class="card-label">Hallazgo 1</div>
+    <div style="font-size:15px;font-weight:700;font-style:italic;color:#fff;line-height:1.3;margin-top:4px;">Encuadre más favorable para Duque en los 5 temas analizados</div>
+    <div style="font-size:11px;color:rgba(255,255,255,.65);margin-top:8px;">Mayor brecha en <strong style="color:var(--blue-light)">Corrupción (+0,55)</strong> y Economía (+0,48)</div>
+  </div>
+  <div class="insight">
+    <div class="card-label">Hallazgo 2</div>
+    <div style="font-size:15px;font-weight:700;font-style:italic;color:var(--blue);line-height:1.3;margin-top:4px;">El Tiempo fue más favorable a Duque que a Petro</div>
+    <div style="font-size:11px;color:var(--gray-600);margin-top:8px;">4,54 vs 3,93 · diferencia de <strong>+0,61</strong></div>
+  </div>
+  <div class="insight">
+    <div class="card-label">Hallazgo 3</div>
+    <div style="font-size:15px;font-weight:700;font-style:italic;color:var(--orange);line-height:1.3;margin-top:4px;">El Espectador fue el medio con encuadre más similar entre presidentes</div>
+    <div style="font-size:11px;color:var(--gray-600);margin-top:8px;">3,78 Duque vs 3,82 Petro · Δ mínimo <strong>+0,04</strong> para Petro</div>
+  </div>
+</div>
+```
+
   </div>
 </div>
 
 <!-- ══ PAGE: EXPLORAR ═════════════════════════════════════════════════ -->
+
 <div id="page-explorar" class="page">
   <div class="filter-bar">
     <span class="f-lbl">Presidente</span>
@@ -338,28 +345,32 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
   <div class="container">
     <div class="g4" id="exp-kpis"></div>
 
-    <div class="sdiv"><div class="sdiv-title">Distribución de encuadres</div><div class="sdiv-line"></div></div>
-    <div class="g2">
-      <div class="card"><div class="card-label">Por categoría de valoración</div><div id="exp-dist"></div></div>
-      <div class="card"><div class="card-label">Distribución comparada</div><div class="cw"><canvas id="exp-chart-dist"></canvas></div></div>
-    </div>
+```
+<div class="sdiv"><div class="sdiv-title">Distribución de encuadres</div><div class="sdiv-line"></div></div>
+<div class="g2">
+  <div class="card"><div class="card-label">Por categoría de valoración</div><div id="exp-dist"></div></div>
+  <div class="card"><div class="card-label">Distribución comparada</div><div class="cw"><canvas id="exp-chart-dist"></canvas></div></div>
+</div>
 
-    <div class="sdiv"><div class="sdiv-title">Por medio de comunicación</div><div class="sdiv-line"></div></div>
-    <div class="gw">
-      <div class="card"><div class="card-label">Comparación por medio</div><div class="cw"><canvas id="exp-chart-medios"></canvas></div></div>
-      <div class="card"><div class="card-label">Radar temático</div><div class="cw"><canvas id="exp-chart-radar"></canvas></div></div>
-    </div>
+<div class="sdiv"><div class="sdiv-title">Por medio de comunicación</div><div class="sdiv-line"></div></div>
+<div class="gw">
+  <div class="card"><div class="card-label">Comparación por medio</div><div class="cw"><canvas id="exp-chart-medios"></canvas></div></div>
+  <div class="card"><div class="card-label">Radar temático</div><div class="cw"><canvas id="exp-chart-radar"></canvas></div></div>
+</div>
 
-    <div class="sdiv"><div class="sdiv-title">Evolución temporal</div><div class="sdiv-line"></div></div>
-    <div class="full card">
-      <div class="card-label">Trayectoria mensual del encuadre</div>
-      <div class="cw"><canvas id="exp-chart-temporal"></canvas></div>
-      <div class="t-note"><span>M1 = agosto de posesión · Meses relativos por mandato</span><span>Líneas punteadas = promedio global de cada período</span></div>
-    </div>
+<div class="sdiv"><div class="sdiv-title">Evolución temporal</div><div class="sdiv-line"></div></div>
+<div class="full card">
+  <div class="card-label">Trayectoria mensual del encuadre</div>
+  <div class="cw"><canvas id="exp-chart-temporal"></canvas></div>
+  <div class="t-note"><span>M1 = agosto de posesión · Meses relativos por mandato</span><span>Líneas punteadas = promedio global de cada período</span></div>
+</div>
+```
+
   </div>
 </div>
 
 <!-- ══ PAGE: LINGÜÍSTICO ══════════════════════════════════════════════ -->
+
 <div id="page-linguistic" class="page">
   <div class="page-hero">
     <div class="page-hero-inner">
@@ -396,6 +407,7 @@ nav { background:#fff; border-bottom:1px solid var(--border); display:flex; alig
 </div>
 
 <!-- ══ PAGE: METODOLOGÍA ══════════════════════════════════════════════ -->
+
 <div id="page-metodo" class="page">
   <div class="page-hero">
     <div class="page-hero-inner">
@@ -876,6 +888,7 @@ setInterval(fetchSheetData, 10 * 60 * 1000);
 </script>
 
 <!-- ══ PAGE: NOSOTROS ════════════════════════════════════════════════ -->
+
 <div id="page-nosotros" class="page">
   <div class="page-hero" style="background:var(--black);">
     <div class="page-hero-inner">
@@ -893,157 +906,159 @@ setInterval(fetchSheetData, 10 * 60 * 1000);
 
   <div class="container">
 
-    <!-- SOBRE EL SEMILLERO -->
-    <div class="sdiv"><div class="sdiv-title">Sobre el semillero</div><div class="sdiv-line"></div></div>
+```
+<!-- SOBRE EL SEMILLERO -->
+<div class="sdiv"><div class="sdiv-title">Sobre el semillero</div><div class="sdiv-line"></div></div>
 
-    <div class="gw" style="margin-bottom:16px;">
-      <div class="card">
-        <div class="card-label">Objetivo</div>
-        <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin-bottom:14px;">
-          Facilitar un escenario para el análisis, estudio e investigación de las diferentes teorías, prácticas y tendencias de la <strong style="color:var(--black);">comunicación política y la opinión pública</strong> como fenómenos cada vez más relevantes en una sociedad con relaciones sociales profundamente mediatizadas.
-        </p>
-        <p style="font-size:13px;color:var(--gray-600);line-height:1.7;">
-          Desde 2008, la Universidad EAFIT ha abordado la comunicación política como disciplina en diferentes áreas, creando énfasis en los pregrados de Ciencias Políticas y Comunicación Social, posgrados y líneas de investigación con amplia producción académica.
-        </p>
+<div class="gw" style="margin-bottom:16px;">
+  <div class="card">
+    <div class="card-label">Objetivo</div>
+    <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin-bottom:14px;">
+      Facilitar un escenario para el análisis, estudio e investigación de las diferentes teorías, prácticas y tendencias de la <strong style="color:var(--black);">comunicación política y la opinión pública</strong> como fenómenos cada vez más relevantes en una sociedad con relaciones sociales profundamente mediatizadas.
+    </p>
+    <p style="font-size:13px;color:var(--gray-600);line-height:1.7;">
+      Desde 2008, la Universidad EAFIT ha abordado la comunicación política como disciplina en diferentes áreas, creando énfasis en los pregrados de Ciencias Políticas y Comunicación Social, posgrados y líneas de investigación con amplia producción académica.
+    </p>
+  </div>
+  <div>
+    <div class="card" style="margin-bottom:14px;">
+      <div class="card-label">Áreas de estudio</div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin-top:4px;">
+        <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">📡 Comunicación política</div>
+        <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">🗳️ Marketing político y campañas</div>
+        <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">📺 Comunicación de gobiernos</div>
+        <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">🌐 Medios sociales y política</div>
+        <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">📊 Investigación en opinión pública</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SOBRE ESTA INVESTIGACIÓN -->
+<div class="sdiv"><div class="sdiv-title">Sobre esta investigación</div><div class="sdiv-line"></div></div>
+
+<div class="full card" style="background:var(--blue);border-color:var(--blue);margin-bottom:16px;">
+  <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-light);margin-bottom:8px;">Título del proyecto</div>
+  <div style="font-size:18px;font-weight:700;font-style:italic;color:#fff;line-height:1.3;margin-bottom:10px;">"El presidente en primera plana: Encuadres de medios de comunicación en el cubrimiento a liderazgos presidenciales en Colombia"</div>
+  <div style="font-size:12px;color:rgba(255,255,255,.65);">Línea de investigación: Encuadres Mediáticos · Semillero CPOP · Universidad EAFIT</div>
+</div>
+
+<div class="g3" style="margin-bottom:16px;">
+  <div class="card">
+    <div class="card-label">Contexto</div>
+    <p style="font-size:12px;color:var(--gray-600);line-height:1.7;">
+      En las democracias contemporáneas, los medios informan y a la vez <strong style="color:var(--black);">interpretan la realidad política</strong>. Sus narrativas moldean la forma en que la ciudadanía percibe a los gobiernos y sus decisiones.
+    </p>
+  </div>
+  <div class="card">
+    <div class="card-label">Pregunta central</div>
+    <p style="font-size:12px;color:var(--gray-600);line-height:1.7;">
+      ¿Cómo distintos medios colombianos —tradicionales digitales e independientes nativos digitales— <strong style="color:var(--black);">encuadran editorialmente</strong> las administraciones de Duque y Petro en sus primeros 18 meses?
+    </p>
+  </div>
+  <div class="card">
+    <div class="card-label">Relevancia</div>
+    <p style="font-size:12px;color:var(--gray-600);line-height:1.7;">
+      El análisis aporta al debate sobre el <strong style="color:var(--black);">rol de los medios en contextos de alta polarización</strong> y la forma en que influyen en la legitimidad del poder ejecutivo en Colombia.
+    </p>
+  </div>
+</div>
+
+<!-- EQUIPO -->
+<div class="sdiv"><div class="sdiv-title">Equipo investigador</div><div class="sdiv-line"></div></div>
+
+<div class="g2" style="margin-bottom:16px;">
+  <!-- Docentes -->
+  <div class="card">
+    <div class="card-label">Docentes coordinadores</div>
+    <div style="display:flex;flex-direction:column;gap:14px;margin-top:4px;">
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="width:38px;height:38px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">NR</div>
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--black);">Néstor Julián Restrepo Echavarría</div>
+          <div style="font-size:11px;color:var(--gray-400);margin-top:1px;">Politólogo y Comunicador Social · EAFIT</div>
+          <div style="font-size:11px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff918d9a8c8b8dcecdbf9a9e99968bd19a9b8ad19c90">[email&#160;protected]</a></div>
+        </div>
+      </div>
+      <div style="border-top:1px solid var(--border);"></div>
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="width:38px;height:38px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">NM</div>
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--black);">Nicolás Molina Arroyave</div>
+          <div style="font-size:11px;color:var(--gray-400);margin-top:1px;">Politólogo · EAFIT</div>
+          <div style="font-size:11px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddb3b0b2b1b4b3bcbcec9db8bcbbb4a9f3b8b9a8f3beb2">[email&#160;protected]</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Equipo -->
+  <div class="card">
+    <div class="card-label">Equipo de investigación</div>
+    <div style="margin-bottom:10px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;">Líder de logística</div>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <div style="width:30px;height:30px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;flex-shrink:0;">SG</div>
+        <div><div style="font-size:12px;font-weight:600;">Sammy García Ruíz</div><div style="font-size:10px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bccfdbddcedfd5ddcec9fcc9d2ddd092d9d8c992dfd3">[email&#160;protected]</a> · UNAL Medellín</div></div>
+      </div>
+    </div>
+    <div style="margin-bottom:10px;border-top:1px solid var(--border);padding-top:10px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;">Coordinadora general de estudiantes</div>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <div style="width:30px;height:30px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;flex-shrink:0;">MV</div>
+        <div><div style="font-size:12px;font-weight:600;">Mariana Villoria García</div><div style="font-size:10px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c312a353030332e353d3b1c393d3a352872393829723f33">[email&#160;protected]</a> · EAFIT</div></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:10px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;">Investigadores</div>
+      <div style="margin-bottom:12px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3D5B81;margin-bottom:6px;">Equipo EAFIT</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">EC</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Edier Coronado Mendoza</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">MJ</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">María José Muñoz Rodríguez</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">LP</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Liseth Poveda Alzate</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">JG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Jacobo Gómez López</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
+        </div>
+      </div>
+      <div style="margin-bottom:12px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3D5B81;margin-bottom:6px;">Equipo UNAL Medellín</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">MC</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Mariana Carmona González</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">DG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Daniel Andrés Galvis García</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">EB</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Elizabeth Buitrago Espejo</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">JD</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Juan Manuel Durán Artunduanga</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">DM</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Daniel Esteban Molina Machado</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">DA</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Daniela Laura Angulo</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">VG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Valentina Gómez Mejía</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">ME</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Melissa Echeverri Muriel</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">SV</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Sofia Valencia Bustamante</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">BG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Bryan Sneyder Giraldo Céspedes</div></div></div>
+          <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">NG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Nicolás García</div></div></div>
+        </div>
       </div>
       <div>
-        <div class="card" style="margin-bottom:14px;">
-          <div class="card-label">Áreas de estudio</div>
-          <div style="display:flex;flex-direction:column;gap:7px;margin-top:4px;">
-            <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">📡 Comunicación política</div>
-            <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">🗳️ Marketing político y campañas</div>
-            <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">📺 Comunicación de gobiernos</div>
-            <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">🌐 Medios sociales y política</div>
-            <div style="font-size:12px;color:var(--gray-600);padding:7px 10px;background:var(--gray-100);border-radius:4px;">📊 Investigación en opinión pública</div>
-          </div>
-        </div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3D5B81;margin-bottom:6px;">Equipo UPB</div>
+        <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">JP</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Juan Pablo López Agudelo</div><div style="font-size:9px;color:#aaa;">Pontificia Bolivariana</div></div></div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- SOBRE ESTA INVESTIGACIÓN -->
-    <div class="sdiv"><div class="sdiv-title">Sobre esta investigación</div><div class="sdiv-line"></div></div>
+<!-- DISCUSIÓN -->
+<div class="sdiv"><div class="sdiv-title">Discusión e implicaciones</div><div class="sdiv-line"></div></div>
 
-    <div class="full card" style="background:var(--blue);border-color:var(--blue);margin-bottom:16px;">
-      <div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-light);margin-bottom:8px;">Título del proyecto</div>
-      <div style="font-size:18px;font-weight:700;font-style:italic;color:#fff;line-height:1.3;margin-bottom:10px;">"El presidente en primera plana: Encuadres de medios de comunicación en el cubrimiento a liderazgos presidenciales en Colombia"</div>
-      <div style="font-size:12px;color:rgba(255,255,255,.65);">Línea de investigación: Encuadres Mediáticos · Semillero CPOP · Universidad EAFIT</div>
-    </div>
-
-    <div class="g3" style="margin-bottom:16px;">
-      <div class="card">
-        <div class="card-label">Contexto</div>
-        <p style="font-size:12px;color:var(--gray-600);line-height:1.7;">
-          En las democracias contemporáneas, los medios informan y a la vez <strong style="color:var(--black);">interpretan la realidad política</strong>. Sus narrativas moldean la forma en que la ciudadanía percibe a los gobiernos y sus decisiones.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-label">Pregunta central</div>
-        <p style="font-size:12px;color:var(--gray-600);line-height:1.7;">
-          ¿Cómo distintos medios colombianos —tradicionales digitales e independientes nativos digitales— <strong style="color:var(--black);">encuadran editorialmente</strong> las administraciones de Duque y Petro en sus primeros 18 meses?
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-label">Relevancia</div>
-        <p style="font-size:12px;color:var(--gray-600);line-height:1.7;">
-          El análisis aporta al debate sobre el <strong style="color:var(--black);">rol de los medios en contextos de alta polarización</strong> y la forma en que influyen en la legitimidad del poder ejecutivo en Colombia.
-        </p>
-      </div>
-    </div>
-
-    <!-- EQUIPO -->
-    <div class="sdiv"><div class="sdiv-title">Equipo investigador</div><div class="sdiv-line"></div></div>
-
-    <div class="g2" style="margin-bottom:16px;">
-      <!-- Docentes -->
-      <div class="card">
-        <div class="card-label">Docentes coordinadores</div>
-        <div style="display:flex;flex-direction:column;gap:14px;margin-top:4px;">
-          <div style="display:flex;gap:12px;align-items:flex-start;">
-            <div style="width:38px;height:38px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">NR</div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--black);">Néstor Julián Restrepo Echavarría</div>
-              <div style="font-size:11px;color:var(--gray-400);margin-top:1px;">Politólogo y Comunicador Social · EAFIT</div>
-              <div style="font-size:11px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff918d9a8c8b8dcecdbf9a9e99968bd19a9b8ad19c90">[email&#160;protected]</a></div>
-            </div>
-          </div>
-          <div style="border-top:1px solid var(--border);"></div>
-          <div style="display:flex;gap:12px;align-items:flex-start;">
-            <div style="width:38px;height:38px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">NM</div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--black);">Nicolás Molina Arroyave</div>
-              <div style="font-size:11px;color:var(--gray-400);margin-top:1px;">Politólogo · EAFIT</div>
-              <div style="font-size:11px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddb3b0b2b1b4b3bcbcec9db8bcbbb4a9f3b8b9a8f3beb2">[email&#160;protected]</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Equipo -->
-      <div class="card">
-        <div class="card-label">Equipo de investigación</div>
-        <div style="margin-bottom:10px;">
-          <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;">Líder de logística</div>
-          <div style="display:flex;gap:10px;align-items:center;">
-            <div style="width:30px;height:30px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;flex-shrink:0;">SG</div>
-            <div><div style="font-size:12px;font-weight:600;">Sammy García Ruíz</div><div style="font-size:10px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bccfdbddcedfd5ddcec9fcc9d2ddd092d9d8c992dfd3">[email&#160;protected]</a> · UNAL Medellín</div></div>
-          </div>
-        </div>
-        <div style="margin-bottom:10px;border-top:1px solid var(--border);padding-top:10px;">
-          <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;">Coordinadora general de estudiantes</div>
-          <div style="display:flex;gap:10px;align-items:center;">
-            <div style="width:30px;height:30px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;flex-shrink:0;">MV</div>
-            <div><div style="font-size:12px;font-weight:600;">Mariana Villoria García</div><div style="font-size:10px;color:var(--gray-400);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c312a353030332e353d3b1c393d3a352872393829723f33">[email&#160;protected]</a> · EAFIT</div></div>
-          </div>
-        </div>
-        <div style="border-top:1px solid var(--border);padding-top:10px;">
-          <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;">Investigadores</div>
-          <div style="margin-bottom:12px;">
-            <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3D5B81;margin-bottom:6px;">Equipo EAFIT</div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">EC</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Edier Coronado Mendoza</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">MJ</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">María José Muñoz Rodríguez</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">LP</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Liseth Poveda Alzate</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">JG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Jacobo Gómez López</div><div style="font-size:9px;color:#aaa;">EAFIT</div></div></div>
-            </div>
-          </div>
-          <div style="margin-bottom:12px;">
-            <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3D5B81;margin-bottom:6px;">Equipo UNAL Medellín</div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">MC</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Mariana Carmona González</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">DG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Daniel Andrés Galvis García</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">EB</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Elizabeth Buitrago Espejo</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">JD</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Juan Manuel Durán Artunduanga</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">DM</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Daniel Esteban Molina Machado</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">DA</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Daniela Laura Angulo</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">VG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Valentina Gómez Mejía</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">ME</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Melissa Echeverri Muriel</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">SV</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Sofia Valencia Bustamante</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">BG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Bryan Sneyder Giraldo Céspedes</div></div></div>
-              <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">NG</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Nicolás García</div></div></div>
-            </div>
-          </div>
-          <div>
-            <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#3D5B81;margin-bottom:6px;">Equipo UPB</div>
-            <div style="display:flex;gap:7px;align-items:center;padding:4px 0;"><div style="width:26px;height:26px;border-radius:50%;background:rgba(61,91,129,.12);display:flex;align-items:center;justify-content:center;color:#3D5B81;font-weight:700;font-size:9px;flex-shrink:0;">JP</div><div><div style="font-size:11px;font-weight:600;line-height:1.2;">Juan Pablo López Agudelo</div><div style="font-size:9px;color:#aaa;">Pontificia Bolivariana</div></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- DISCUSIÓN -->
-    <div class="sdiv"><div class="sdiv-title">Discusión e implicaciones</div><div class="sdiv-line"></div></div>
-
-    <div class="g2">
-      <div class="card">
-        <div class="card-label">Hallazgo central</div>
-        <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin-bottom:12px;">
-          Los resultados confirman que la cobertura mediática hacia Petro es <strong style="color:var(--orange);">más crítica</strong> en comparación con la recibida por Duque, en línea con la hipótesis inicial. Los medios tradicionales ejercen un cubrimiento más riguroso hacia el actual presidente, mientras que los independientes reflejan un panorama más heterogéneo.
-        </p>
-        <p style="font-size:13px;color:var(--gray-600);line-height:1.7;">
-          De manera preliminar, se ha identificado que la cobertura hacia ambos gobiernos tiende a volverse <strong style="color:var(--black);">más crítica a medida que avanza el tiempo</strong>, lo que sugiere que los medios adoptan posiciones más exigentes conforme se acumulan decisiones y conflictos.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-label">Conclusión</div>
-        <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin-bottom:12px;">
-          Los medios colombianos cumplen un <strong style="color:var(--black);">papel activo en la construcción de narrativas</strong> sobre el poder presidencial. Aunque tanto Duque como Petro han en
+<div class="g2">
+  <div class="card">
+    <div class="card-label">Hallazgo central</div>
+    <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin-bottom:12px;">
+      Los resultados confirman que la cobertura mediática hacia Petro es <strong style="color:var(--orange);">más crítica</strong> en comparación con la recibida por Duque, en línea con la hipótesis inicial. Los medios tradicionales ejercen un cubrimiento más riguroso hacia el actual presidente, mientras que los independientes reflejan un panorama más heterogéneo.
+    </p>
+    <p style="font-size:13px;color:var(--gray-600);line-height:1.7;">
+      De manera preliminar, se ha identificado que la cobertura hacia ambos gobiernos tiende a volverse <strong style="color:var(--black);">más crítica a medida que avanza el tiempo</strong>, lo que sugiere que los medios adoptan posiciones más exigentes conforme se acumulan decisiones y conflictos.
+    </p>
+  </div>
+  <div class="card">
+    <div class="card-label">Conclusión</div>
+    <p style="font-size:13px;color:var(--gray-600);line-height:1.7;margin-bottom:12px;">
+      Los medios colombianos cumplen un <strong style="color:var(--black);">papel activo en la construcción de narrativas</strong> sobre el poder presidencial. Aunque tanto Duque como Petro han en
+```
